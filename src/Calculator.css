@@ -1,0 +1,108 @@
+html, body, #root, .room {
+  height: 100%;
+  margin: 0;
+}
+.vaalea {
+  background-color: #C0C0C0;
+  color: #282c34;
+}
+.tumma {
+  background-color: #282c34;
+  color: #C0C0C0;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 10s cubic-bezier(0.175, 0.885, 0.32, 2.275);
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.calculator-main {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.sidebar-container {
+  background-color: #442424de;
+  border: 1px solid #000000;
+  height: 80vh;
+  width: 40vh;
+  right: 1px;
+  position: absolute;
+  overflow: auto;
+}
+.sidebar-header {
+  background: #490808;
+  height: 3rem;
+  border-bottom: 1px solid #000000
+}
+.clear-button {
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px
+}
+.history-container {
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+.history-container::after {
+  content: '';
+  border-top: #000000 dotted;
+  display: block;
+}
+.output-screen {
+  width: calc(25rem - 5px);
+  height: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 15px
+}
+button{
+  color: red;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+}
+.buttons-container::before{
+  content: '';
+  border: #000000 solid;
+  display: block;
+}
+.buttons-container::after {
+  content: '';
+  border: #000000 solid;
+  display: block;
+}
+#operator {
+  background: #490808;
+  border: 0.5px solid black;
+}
+#number {
+  background: #531d1dde;
+  border: 0.5px solid black;
+}
+#number:hover{
+  background: white;
+}
+#operator:hover {
+  background: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

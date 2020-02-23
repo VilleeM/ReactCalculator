@@ -1,0 +1,12 @@
+html, body, #root, .room {
+    height: 100%;
+    margin: 0;
+}
+.vaalea {
+    background-color: white;
+    color: #282c34;
+}
+.tumma {
+    background-color: #282c34;
+    color: white;
+}
